@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark : #222222;
+    --green : #0e8638;
+    --light-grey : #ebebebca;
+    --white : #FFFFFF;
+    --yellow : #FFC836;
+}
+h2{
+    font-family: "Archivo Black", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:visited , a:link , a:focus, a:active{
+    color: var(--dark);
+}
+.btn{
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.btn-close{
+    background-color: white;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.btn-full{
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+    color: white !important;
+}
+/* FLEXBOX */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.direction-column{
+    flex-direction: column;
+}
+.responsive{
+    width: 100%;
+    height: auto;
+}
+/* CONTAINER */
+.container-1200{
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 3%;
+    height: 9vh;
+    z-index: 10;
+    margin-bottom: 2rem;
+    background-color: var(--green);
+    color: white;
+}
+main{
+    padding: 0 5%;
+}
+main form{
+    margin-top: 10rem;
+}
+/* SECTION CLIENT */
+.space-client-top{
+    margin-bottom: 4rem;
+    margin-top: 8rem;
+}
+.box-categorie{
+    width: 100%;
+    gap: 16px;
+    margin-top: 2rem;
+}
+.categorie{
+    border: 2px solid black;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.box-produit{
+    width: 70%;
+    gap: 16px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.categorie:hover{
+    background-color: var(--yellow);
+    color: white;
+    border: 1px solid var(--yellow);
+    transition: 0.3s;
+}
+.produit{
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    padding: 16px;
+}
+.produit h4{
+    width: 100%;
+}
+.panier-container{
+    width: 20%;
+    height: 91vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: var(--light-grey);
+    padding: 32px;
+}
+.panier-container li{
+    margin-top: 0.5rem;
+}
+.panier-container h3{
+    text-align: center;
+}
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 32px;
+    line-height: 5rem;
+}
+.panier-container-bottom{
+    position: absolute;
+    bottom: 32px;
+    width: 80%;
+}
+.panier-prix{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.box-commandes{
+    gap: 5%;
+    margin-top: 2rem;
+}
+.commande{
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    padding: 16px;
+}
